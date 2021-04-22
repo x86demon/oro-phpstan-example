@@ -1,0 +1,12 @@
+parameters:
+    ignoreErrors:
+        - '#Access to an undefined property#'
+        - '#Call to sprintf contains#'
+    bootstrapFiles:
+        - 'application-loader.php'
+    excludes_analyse:
+        - */Tests/*
+        - */Test/*
+        - */Migrations/*
+        - */Migration/*
+        - */views/*
