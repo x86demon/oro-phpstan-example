@@ -1,0 +1,1 @@
+# oro-phpstan-example
