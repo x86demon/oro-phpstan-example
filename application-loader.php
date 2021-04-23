@@ -10,6 +10,6 @@ if (!is_dir($appPath . '/vendor')) {
 }
 
 $loader = require $appPath . '/vendor/autoload.php';
-require $appPath . '/src/AppKernel.php';
-$kernel = new AppKernel('dev', false);
-$kernel->boot();
+
+Oro\Bundle\EntityExtendBundle\Tools\ExtendClassLoadingUtils::registerClassLoader($appPath . '/var/cache/dev');
+Oro\Bundle\EntityExtendBundle\Tools\ExtendClassLoadingUtils::setAliases($appPath . '/var/cache/dev');
